@@ -2,5 +2,8 @@
   "creativetab.bandages_tab": "Bandages",
   "item.bandages.bandage": "Бинт",
   "item.bandages.leather_strip": "Смужка зі шкіри",
-  "item.bandages.pineapple_leather_strip":"Смужка з ананасової шкіри"
+  "item.bandages.pineapple_leather_strip":"Смужка з ананасової шкіри",
+  "item.bandages.coin1":"1 монета",
+  "item.bandages.coin10":"10 монет",
+  "item.bandages.coin100":"100 монет"
 }

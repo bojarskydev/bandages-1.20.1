@@ -1,25 +1,25 @@
 package net.bojarsky.bandages;
 
 import com.mojang.logging.LogUtils;
+
 import net.bojarsky.bandages.items.ModCreativeTabs;
 import net.bojarsky.bandages.items.ModItems;
-import net.minecraftforge.api.distmarker.Dist;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 import org.slf4j.Logger;
+
 @Mod(Bandages.MOD_ID)
 public class Bandages {
     public static final String MOD_ID = "bandages";
     private static final Logger LOGGER = LogUtils.getLogger();
-    public Bandages(FMLJavaModLoadingContext context) {
-        IEventBus modEventBus = context.getModEventBus();
+    public Bandages () {
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeTabs.register(modEventBus);
 
@@ -32,22 +32,12 @@ public class Bandages {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        Bandages.LOGGER.info("!!! BANDAGES ENABLED !!!");
 
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
 
-    }
-
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-
-        }
-    }
 }

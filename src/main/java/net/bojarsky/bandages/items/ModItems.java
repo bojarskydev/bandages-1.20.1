@@ -1,7 +1,9 @@
 package net.bojarsky.bandages.items;
 
 import net.bojarsky.bandages.Bandages;
+
 import net.minecraft.world.item.Item;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,8 +17,13 @@ public class ModItems {
             () -> new ItemBandage());
     public static final RegistryObject<Item> LEATHER_STRIP = ITEMS.register("leather_strip",
             () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> PINEAPPLE_LEATHER_STRIP = ITEMS.register("pineapple_leather_strip",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COIN1 = ITEMS.register("coin1",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COIN10 = ITEMS.register("coin10",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COIN100 = ITEMS.register("coin100",
             () -> new Item(new Item.Properties()));
 
 

@@ -1,10 +1,12 @@
 package net.bojarsky.bandages.items;
 
 import net.bojarsky.bandages.Bandages;
+
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -21,6 +23,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.BANDAGE.get());
                         output.accept(ModItems.LEATHER_STRIP.get());
                         output.accept(ModItems.PINEAPPLE_LEATHER_STRIP.get());
+                        output.accept(ModItems.COIN1.get());
+                        output.accept(ModItems.COIN10.get());
+                        output.accept(ModItems.COIN100.get());
 
                     })
                     .build());
