@@ -19,13 +19,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PINEAPPLE_LEATHER_STRIP = ITEMS.register("pineapple_leather_strip",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> COIN1 = ITEMS.register("coin1",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> COIN10 = ITEMS.register("coin10",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> COIN100 = ITEMS.register("coin100",
-            () -> new Item(new Item.Properties()));
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
